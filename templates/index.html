@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Search</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body 
+        {
+            background-image: url("{{ url_for('static', filename='BG3.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+    </style>
+    <script>
+        function updateResult(result) {
+            var resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = result;
+        }  
+    </script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <a href="https://www.ellenox.com" target="_blank">
+                    <img src="{{ url_for('static', filename='logoE.png') }}" alt="Ellenox Logo" class="logo_size">
+                </a>
+            </div>
+        </div>
+        <div class="company-name">
+            <a href="https://www.ellenox.com" target="_blank" class="company-name-link">
+                <h1>Ellenox</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <p class="head1">Semantic Search of Research Papers</p>
+    </div>
+
+    <div class="content">
+        <div class="wrapper">
+            <h2>You can add your PDF file here and get the relevant results</h2>
+            <form action='/' method="POST" enctype="multipart/form-data">    
+                <div class="addFile">
+                    <label for="file-upload" class="file-upload">
+                        <input class="file-upload__input" type="file" name="file" id="myFile" />
+                        <br />
+                        <br />
+                        <div class="button">
+                            <button type="submit">Upload</button>
+                        </div>
+                    </label>
+                </div>
+            </form>
+            <div id="result"></div> <!-- Result placeholder -->
+        </div>
+    </div>
+</body>
+</html>

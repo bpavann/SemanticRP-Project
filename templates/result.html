@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='BG3.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Here is the relevant Research Papers Links</h1>
+    <h2 class="h2">You can copy the links and search in the browser to access the papers</h2>
+    <div class="result">
+        <!-- Split the data by new lines -->
+        {% set links = data.split('\n') %}
+        {% for link in links %}
+            {% if link.startswith('http') %}
+                <div><a href="{{ link.strip() }}" target="_blank">{{ link }}</a></div>
+            {% else %}
+                <div>{{ link }}</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+.logo {
+  background-image:url("{{ url_for('static', filename='logoE.jpg') }}");
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  background-size: cover;
+  cursor: pointer
+}
+.logo_size{
+  max-width: 150px;
+    height: auto;
+}
+
+.logo-container {
+  margin-right: 10px;
+}
+
+.heading{
+  color: rgb(215, 231, 227);
+  display: flex;
+  font-size: 3rem;
+  font-weight: bolder ;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10vh; 
+}
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer
+}
+
+.company-name-link {
+  color: white; 
+  text-decoration: none; 
+}
+
+.company-name-link:hover {
+  text-decoration: underline; 
+}
+
+
+.content{
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrapper {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+}
+.wrapper h2{
+  top: 10%;
+  color:  #0d7658;
+  font-size: 25px;
+}
+
+.addFile {
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.file-upload {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #0d7658;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+.file-upload:hover {
+  background-color: #e6e6e6;
+}
+
+.file-upload input[type="file"] {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  color: #0d7658;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.button button{
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  background: #0f6150;
+  border: none;
+  width: 300px;
+  height: 50px;
+  margin-top: -40px;
+  margin-left: -10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #0f6150;
+  transition: all .2s ease;
+  outline: none;
+  justify-content: center;
+  cursor: pointer
+}
+.button button:hover{
+  background: #149174;
+	color: #000000;
+}
+.button button:active{
+  border:0;
+}
+
+
+
+

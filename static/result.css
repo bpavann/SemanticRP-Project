@@ -1,0 +1,22 @@
+
+h1 {
+    color:  #0f6150;
+    font-size: 60px;
+  }
+  
+  h2 {
+    color:rgb(145, 225, 186);
+    text-decoration:underline;
+  }
+  
+  .result {
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .result a {
+    color: rgb(46, 152, 108);
+    text-decoration: underline;
+  }
